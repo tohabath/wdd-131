@@ -6,6 +6,16 @@ body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5em;
 }
+body.dark {
+    background-color: #202020;
+    color: white;
+}
+div.dark {
+    background-color: #333;
+}
+h3.dark {
+    color:#1aa3ff;
+}
 .center {
     border-style: solid;
     padding-top: 2.5em;
