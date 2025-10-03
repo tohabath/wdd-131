@@ -87,24 +87,6 @@ img {
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
-
-    /*
-    Noticed there could be enough room for dropdown to be spread out,
-    with shorter space between links. I don't think this meets
-    requirements, however.
-
-    #toggle-drop {
-        display: none;
-    }
-    #dropdown {
-        flex-direction: row;
-        margin-left: -1em;
-    }
-    a {
-        margin-left: 1em;
-    }
-    */
-
     .footer-spacer {
         margin: 5%;
     }
