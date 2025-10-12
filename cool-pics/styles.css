@@ -45,7 +45,7 @@ header {
 h1, h2 {
     font-family: var(--secondary-font);
 }
-nav button {
+header button {
     display: block;
     background: none;
     border: none;
