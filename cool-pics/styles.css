@@ -45,7 +45,7 @@ header {
 h1, h2 {
     font-family: var(--secondary-font);
 }
-button {
+nav button {
     display: block;
     background: none;
     border: none;
@@ -78,6 +78,9 @@ a {
     border-color: white;
     border-width: 0.5em;
     filter: drop-shadow(10px 10px 4px #00000075);
+}
+.gallery img:hover {
+    cursor: pointer;
 }
 .footer-spacer {
     margin: 0;

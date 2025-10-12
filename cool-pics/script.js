@@ -10,9 +10,9 @@ function handleDialog(event) {
     const theImage = event.target.closest('img').getAttribute('src');
 
     // I was confused by step three, so I asked
-    // ChatGPT for help.
-    // This block of code is the only part
-    // from its explanation I'm using.
+    // ChatGPT for help. This block of code
+    // is the only part from its explanation I
+    // have translated to this project.
     let parts = theImage.split('-');
     let base = parts[0];
     let fullSrc = base + '-full.jpeg';
@@ -25,30 +25,21 @@ function handleDialog(event) {
     viewer.style.backgroundColor = "rgba(0, 0, 0, 0.6)";
     viewer.style.zIndex = "10";
     viewer.style.textAlign = "center";
-
-    // Styling close button
+    // Styling close button positioning
     viewer.querySelector('button').style.position = "absolute";
-    viewer.querySelector('button').style.right = "5vw";
     viewer.querySelector('button').style.top = "25vh";
-    viewer.querySelector('button').style.fontSize = "3vh";
-    // Styling close button
+    // Styling close button appearance
     viewer.querySelector('button').style.color = "black";
     viewer.querySelector('button').style.backgroundColor = "#ebebeb";
     viewer.querySelector('button').style.borderStyle = "solid";
     viewer.querySelector('button').style.borderWidth = "1px";
     viewer.querySelector('button').style.padding = "5px 15px 5px 15px";
+    viewer.querySelector('button').style.cursor = "pointer";
+    viewer.querySelector('button').style.fontSize = "3vh";
     // Styling viewer image
     viewer.querySelector('img').style.margin = "25vh auto";
     viewer.querySelector('img').style.maxHeight = "100%";
     viewer.querySelector('img').style.maxWidth = "90%";
-
-    // I wanted to adjust the button position to keep it on
-    // the corner of the image, but I failed. I tried several
-    // different strategies to make it work, and tried asking
-    // ChatGPT, but I couldn't figure it out in time.
-    if (window.innerWidth > 1000) {
-        viewer.querySelector('button').style.right = "18vw";
-    }
 
     viewer.showModal();
     viewer.querySelector('button').addEventListener('click', (event) => {viewer.close();})
