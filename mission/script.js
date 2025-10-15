@@ -1,6 +1,6 @@
 const themeSelector = document.getElementById('theme');
 const documentBody = document.querySelector('body');
-const documentSubHeading = document.querySelector('h3');
+const documentSubHeading = document.querySelector('h2');
 const documentImage = document.querySelector('img');
 
 function changeTheme() {

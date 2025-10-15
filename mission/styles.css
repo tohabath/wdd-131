@@ -33,17 +33,17 @@ h3.dark {
     margin-bottom: 3em;
     border-bottom-style: solid;
 }
-h2, h3 {
+h1, h2 {
     text-align: center;
 }
-h2 {
+h1 {
     font-weight: 500;
     font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0.75em;
 }
-h3 {
+h2 {
     font-weight: 300;
     font-size: smaller;
     text-transform: uppercase;
