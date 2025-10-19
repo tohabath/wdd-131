@@ -36,3 +36,13 @@ h1 {
     margin-right: 1em;
     font-weight: normal;
 }
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    color: white;
+    background-color: black;
+}
+.skiptocontent a:focus {
+    top: 0;
+}
