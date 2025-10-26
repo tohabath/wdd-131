@@ -14,33 +14,71 @@ h1 {
     font-size: 3em;
     text-align: center;
 }
+/*
+I don't remember why I thought I should use flex,
+so I did use ChatGPT to help convert everything over to grid.
+*/
 #maincontent {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    margin: 0 auto;
+    gap: 1em;
+    padding: 2em;
+    max-width: 1000px;
+}
+#filters {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: auto 7rem;
+    grid-template-rows: 1rem 1rem 1rem 1rem;
+    gap: 1em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--gold-color);
+}
+#posts {
+    display: grid;
+    gap: 1.5em;
+}
+#posts img {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
+    align-items: center;
+    max-width: 250px;
+    margin: 0 auto;
 }
-#book-listings {
-    margin-right: 10vw;
+#posts header {
+    font-family: 'Lora', 'Impact', serif;
+    font-weight: bold;
+    font-size: 1.75em;
+    color: var(--red-color);
+    margin-bottom: 1em;
 }
-#book-listings li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+#posts p {
+    max-width: 500px;
 }
-#book-meta {
-    margin-right: 10vw;
+#posts a {
+    text-decoration: none;
+    color: var(--red-color);
+    font-weight: normal;
+}
+#posts article {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 2em;
+    margin-bottom: 1em;
+}
+.meta {
     text-align: right;
     border-right-style: solid;
     border-width: 2px;
-    padding: 0.5em;
+    border-color: var(--gold-color);
+    padding: 1em;
 }
-#filters {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em;
-    border-style: solid;
-    border-width: 2px;
+.meta .date {
+    font-size: 1.25em;
+}
+.meta p {
+    margin: 0.5em 0 0.5em 0;
 }
 .main-nav ul {
     border-top-style: solid;

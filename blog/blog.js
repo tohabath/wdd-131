@@ -1,3 +1,4 @@
+const articleSection = document.getElementById('posts');
 const articles = [
 	{
 		id: 1,
@@ -23,5 +24,61 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+		"A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his 'Aunt Pol' and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.",
+		imgSrc:
+		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
 	}
 ]
+
+function addArticle(block) {
+	let identifier = block.id;
+	let date = block.date;
+	let age = block.ages;
+	let genre = block.genre;
+	let rating = block.stars;
+	let title = block.title;
+	let coverImage = block.imgSrc;
+	let coverAlt = block.imgAlt;
+	let description = block.description;
+
+	const newPost = document.createElement('article');
+	newPost.innerHTML = `<div class="meta">
+                    <p class="date">
+                        ${date}
+                    </p>
+                    <p class="age">
+                        ${age}
+                    </p>
+                    <p class="genre">
+                        ${genre}
+                    </p>
+                    <p class="rating">
+                        ${rating}
+                    </p>
+                </div>
+                <div class="desc">
+                    <header>
+                        ${title}
+                    </header>
+                    <img src="${coverImage}" alt="${coverAlt}">
+                    <p id="article-${identifier}">
+                        ${description}
+						<a href="">Read more...</a>
+                    </p>
+                </div>`
+	articleSection.appendChild(newPost);
+}
+
+for (post in articles) {
+	addArticle(articles[post]);
+}
