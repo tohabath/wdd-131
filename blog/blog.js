@@ -71,9 +71,9 @@ function addArticle(block) {
                         ${title}
                     </header>
                     <img src="${coverImage}" alt="${coverAlt}">
-                    <p id="article-${identifier}">
+                    <p>
                         ${description}
-						<a href="">Read more...</a>
+						<a aria-description="Link to read more about ${title}." href="">Read more...</a>
                     </p>
                 </div>`
 	articleSection.appendChild(newPost);
