@@ -1,0 +1,92 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+    /* background-color: #f6f6f8; */
+    background-color: black;
+}
+#cardForm {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: start;
+}
+#cardFront, #cardBack {
+    width: 360px;
+    height: 220px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    position: absolute;
+    background-color: gray;
+}
+#cardFront {
+    z-index: 2;
+    display: grid;
+    padding: 1em;
+}
+#totalAndLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: flex-start;
+}
+#numberInfo {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+}
+#nameAndExpiry {
+    margin-bottom: 1em;
+    display: grid;
+    column-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+}
+#cardBack {
+    z-index: 1;
+    transform: translate(125px, 50px);
+}
+#cardBack label {
+    position: absolute;
+    right: 1em;
+    bottom: 4.5em;
+}
+#cardCVV {
+    position: absolute;
+    width: 75px;
+    right: 1em;
+    bottom: 3em;
+    box-sizing: border-box;
+}
+#cardStripe {
+    height: 36px;
+    background-color: #111;
+    margin-top: 24px;
+}
+input {
+    max-width: 100%;
+    padding: 0.25em;
+    border-style: solid;
+    border-width: 1px;
+}
+label {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    height: 1em;
+}
+button {
+    padding: 1em;
+    background-color: gray;
+    color: black;
+    border-style: solid;
+    position: absolute;
+    left: 80%;
+    bottom: 50%;
+}
