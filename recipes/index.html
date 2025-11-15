@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="recipes.css">
     <script src="main.js"></script>
     <meta charset="UTF-8" />
+    <meta lang="en">
 
     <meta property="og:title" content="Page Title">
     <meta property="og:type" content="website" />
@@ -26,8 +27,10 @@
   <main>
     <section class="search-container">
         <form class="search">
-            <input class="search-bar">
-            <button class="search-button">
+            <label for="searchBar" aria-hidden="true" >Search</label>
+            <input class="search-bar" id="searchBar">
+            <label for="searchButton" aria-hidden="true" >Search Button</label>
+            <button class="search-button" id="searchButton">
                 <span class="material-symbols-outlined">
                     search
                 </span>
@@ -38,25 +41,19 @@
     <section class="recipes-container">
         <article class="recipe">
             <div class="recipe-image-container">
-                <img class="recipe-image" src='./images/sweet-potato-waffle-md.jpg'>
+                <img class="recipe-image" src='./images/sweet-potato-waffle-md.jpg' alt="sweet potato waffles">
             </div>
             <div class="recipe-content">
                 <ul class="tags">
-                    <a href="" class="tag-item">
-                        <li>
+                        <li class="tag-item">
                             Waffles
                         </li>
-                    </a>
-                    <a href="" class="tag-item">
-                        <li>
+                        <li class="tag-item">
                             Sweet Potato
                         </li>
-                    </a>
-                    <a href="" class="tag-item">
-                        <li>
+                        <li class="tag-item">
                             Side
                         </li>
-                    </a>
                 </ul>
                 <header class="name">
                     Sweet Potato Waffles
