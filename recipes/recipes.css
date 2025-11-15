@@ -24,6 +24,14 @@ body img {
     max-width: 100%;
 }
 
+label {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    color: white;
+    background-color: black;
+}
+
 /* TITLE */
 
 .website-title-container {
