@@ -88,7 +88,7 @@ label {
     flex-direction: row;
     gap: 0.5em;
 }
-.tags li {
+.tag-item {
     list-style-type: none;
     display: block;
     padding: 0.5em;
