@@ -24,7 +24,12 @@ body img {
     max-width: 100%;
 }
 
-label {
+hr {
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+.search-label {
     position: absolute;
     top: -40px;
     left: 0;
@@ -81,6 +86,9 @@ label {
 .recipe img {
     width: 100%;
 }
+
+/* TAGS */
+
 .tags {
     margin: 0 0 1em 0;
     padding: 0;
@@ -159,7 +167,6 @@ footer {
         flex-direction: row;
         width: 100%;
         gap: 1em;
-        margin: 0;
     }
     .recipe img {
         width: 300px;
