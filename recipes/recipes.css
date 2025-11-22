@@ -29,14 +29,6 @@ hr {
     width: 100%;
 }
 
-.search-label {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    color: white;
-    background-color: black;
-}
-
 /* TITLE */
 
 .website-title-container {
@@ -73,6 +65,9 @@ hr {
     border-width: 2px;
     border-color: gray;
 }
+.recipe .name {
+    line-height: 1.1em;;
+}
 .recipe-content {
     display: flex;
     flex-direction: column;
@@ -105,7 +100,7 @@ hr {
     width: max-content;
 }
 .rating {
-    margin-top: -0.5em;
+    margin-top: 0.5em;
     margin-bottom: 1em;
 }
 
@@ -122,6 +117,9 @@ hr {
     border-bottom-left-radius: 3px;
     border-width: 1px;
     border-color: gray;
+}
+.search-label {
+    visibility: hidden;
 }
 .search-bar:focus {
     outline: none;
@@ -169,7 +167,7 @@ footer {
         gap: 1em;
     }
     .recipe img {
-        width: 300px;
+        max-height: 300px;
     }
     footer {
         margin: 1em auto 0.5em auto;

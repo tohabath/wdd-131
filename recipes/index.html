@@ -5,7 +5,7 @@
     <title>Recipes</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
     <meta charset="UTF-8" />
     <meta lang="en">
 
@@ -29,51 +29,17 @@
         <form class="search">
             <label for="searchBar" class="search-label">Search</label>
             <input class="search-bar" id="searchBar">
-            <label for="searchButton" class="search-label">Search Button</label>
             <button class="search-button" id="searchButton">
                 <span class="material-symbols-outlined">
                     search
                 </span>
             </button>
+            <label for="searchButton" class="search-label">Search Button</label>
         </form>
     </section>
     <hr>
-    <section class="recipes-container">
-        <article class="recipe">
-            <div class="recipe-image-container">
-                <img class="recipe-image" src='./images/sweet-potato-waffle-md.jpg' alt="sweet potato waffles">
-            </div>
-            <div class="recipe-content">
-                <div class="tags">
-                    <a href="" class="tag-item">
-                        Waffles
-                    </a>
-                    <a href=""  class="tag-item">
-                        Sweet Potato
-                    </a>
-                    <a href=""  class="tag-item">
-                        Side
-                    </a>
-                </div>
-                <header class="name">
-                    Sweet Potato Waffles
-                </header>
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p class="description">
-                    Savory waffles made with Sweet potato with a hint of Ginger
-                </p>
-            </div>
-        </article>
+    <section class="recipes-container" id="recipes-container">
+        
     </section>
   </main>
   <footer>
