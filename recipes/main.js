@@ -107,7 +107,7 @@ function searchHandler() {
 };
 
 function init() {
-    document.getElementById('searchButton').addEventListener('click', (event) => {event.preventDefault(); searchHandler});
+    document.getElementById('searchButton').addEventListener('click', searchHandler);
     randomRecipe();
 };
 init();
