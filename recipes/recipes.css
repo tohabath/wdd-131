@@ -54,6 +54,8 @@ hr {
 .recipes-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .recipe {
     display: flex;
@@ -119,7 +121,7 @@ hr {
     border-color: gray;
 }
 .search-label {
-    visibility: hidden;
+    display: none;
 }
 .search-bar:focus {
     outline: none;
@@ -160,11 +162,17 @@ footer {
     .search-container, .recipes-container {
         width: 100%;
     }
+    .recipes-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .recipe {
         display: flex;
         flex-direction: row;
-        width: 100%;
         gap: 1em;
+        margin: 1em 0 0 0;
     }
     .recipe img {
         max-height: 300px;
@@ -192,8 +200,8 @@ footer {
     .recipe {
         display: flex;
         flex-direction: row;
-        width: 100%;
         gap: 1em;
+        width: 900px;
     }
 
     footer {
