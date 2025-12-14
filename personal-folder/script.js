@@ -27,7 +27,7 @@ function softwareCardTemplate(cardName, cardID, cardImage, cardImageAlt, cardDes
 }
 
 function cardLink(website) {
-    window.open(website, '_blank').focus()
+    window.open(website, '_blank').focus();
 }
 
 function addSoftwareCards() {
