@@ -2,6 +2,7 @@
 
 .homepage-content-container {
     background-color: var(--background-color);
+    padding: 1em;
     width: 100%;
 }
 .homepage-content-container h1, .catalogue-content-container h1 {
@@ -21,6 +22,7 @@
 }
 .homepage-content-description {
     max-width: 400px;
+    padding: 1em;
 }
 .homepage-content-header {
     font-size: 1.5em;
@@ -39,7 +41,7 @@
     }
     .homepage-content-container {
         max-width: 800px;
-        padding: 1em;
+        padding: 0.5em;
     }
     .homepage-content-card, .homepage-content-card-even {
         padding: 1.5em;
