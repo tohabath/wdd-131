@@ -10,7 +10,7 @@ function sliceString(str, maxLength) {
 function softwareCardTemplate(cardName, cardID, cardImage, cardImageAlt, cardDescription, cardURL) {
     const newCard = document.createElement('article');
     const cardDescriptionTruncated = sliceString(cardDescription, 100);
-    newCard.className = "catalogue-section"
+    newCard.className = "catalogue-card-container"
     newCard.innerHTML = `<div class="catalogue-card-content">
               <img class="catalogue-card-image" src="${cardImage}" alt="${cardImageAlt}">
               <div class="catalogue-card-text">
@@ -37,7 +37,7 @@ function addSoftwareCards() {
         currentCard["imgAlt"], currentCard["description"], currentCard["url"]);
         cardContainer.appendChild(newCard);
         window.addEventListener("resize", function(){handleResize(newCard, currentCard["id"], currentCard["description"])});
-        handleResize(newCard, currentCard["id"], currentCard["description"])
+        handleResize(newCard, currentCard["id"], currentCard["description"]);
     });
 }
 

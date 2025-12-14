@@ -131,7 +131,7 @@ main {
     align-items: center;
     padding-bottom: 1em;
 }
-.catalogue-section {
+.catalogue-card-container {
     display: block;
     padding: 1em;
     margin: 0.5em;
@@ -141,7 +141,7 @@ main {
     border-width: 2px;
     transition: border-color 0.25s, height 0.25s;
 }
-.catalogue-section:hover {
+.catalogue-card-container:hover {
     cursor: pointer;
     border-color: white;
 }
@@ -235,7 +235,7 @@ main {
         flex-wrap: wrap;
         justify-content: center;    
     }
-    .catalogue-section {
+    .catalogue-card-container {
         width: 225px;
         min-height: 325px;
         overflow: hidden;
