@@ -136,7 +136,7 @@ main {
     padding: 1em;
     margin: 0.5em;
     background-color: var(--background-secondary-color);
-    width: 50%;
+    width: 90%;
     border-style: solid;
     border-width: 2px;
     transition: border-color 0.25s, height 0.25s;

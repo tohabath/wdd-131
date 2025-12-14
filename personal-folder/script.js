@@ -1,5 +1,12 @@
 import softwareCards from "./module.mjs";
 
+function sliceString(str, maxLength) {
+    if (str.length > maxLength) {
+        return str.slice(0, maxLength) + "...";
+    }
+    return str;
+}
+
 function softwareCardTemplate(cardName, cardID, cardImage, cardImageAlt, cardDescription, cardURL) {
     const newCard = document.createElement('article');
     const cardDescriptionTruncated = sliceString(cardDescription, 100);
@@ -17,13 +24,6 @@ function softwareCardTemplate(cardName, cardID, cardImage, cardImageAlt, cardDes
             </div>`;
     newCard.addEventListener('click', function(){cardLink(cardURL)});
     return newCard;
-}
-
-function sliceString(str, maxLength) {
-    if (str.length > maxLength) {
-        return str.slice(0, maxLength) + "...";
-    }
-    return str;
 }
 
 function cardLink(website) {
