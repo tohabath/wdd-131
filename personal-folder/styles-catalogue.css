@@ -2,11 +2,10 @@
 
 .catalogue-content-container {
     background-color: var(--background-color);
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
 }
 .catalogue-card-container {
     display: block;
