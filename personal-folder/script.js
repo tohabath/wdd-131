@@ -45,7 +45,7 @@ function handleResize(newCard, newCardID, newCardDesc) {
     const newCardDescContainer = document.getElementById(newCardID);
     const newCardDescTrunc = sliceString(newCardDesc, 100);
     if (window.innerWidth <= 600) {
-        newCard.style.height = "425px";
+        newCard.style.height = "max-content";
         newCardDescContainer.innerHTML = newCardDesc;
         newCard.onmouseenter = null;
         newCard.onmouseleave = null;
@@ -54,7 +54,7 @@ function handleResize(newCard, newCardID, newCardDesc) {
         newCardDescContainer.innerHTML = newCardDescTrunc;
         newCard.onmouseenter = function(){
             newCardDescContainer.innerHTML = newCardDesc;
-            newCard.style.height = "425px";
+            newCard.style.height = "450px";
         };
         newCard.onmouseleave = function(){
             newCardDescContainer.innerHTML = newCardDescTrunc;
