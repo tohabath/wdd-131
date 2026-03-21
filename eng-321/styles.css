@@ -1,0 +1,207 @@
+:root {
+  --document-color: rgb(22, 22, 23);
+  --background-color: rgb(30, 30, 30);
+  --paragraph-color: rgb(213, 213, 213);
+  --background-hover-color: rgb(36, 36, 39);
+  --paragraph-hover-color: rgb(255, 255, 255);
+}
+html {
+    background-color: var(--document-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    background-image: linear-gradient(to top, black, rgba(0,0,0,0));
+    scroll-behavior: smooth;
+}
+body {
+    overflow-y: scroll;
+    margin: 0;
+}
+.background-image {
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    z-index: -1;
+}
+.background-image img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+p {
+    font-size: 1em;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+a img {
+    transition-duration: 0.3s;
+}
+a img:hover {
+    filter:brightness(125%);
+}
+nav img {
+    max-height: 2em;
+}
+footer {
+    max-width: 100%;
+    display: block;
+    color: var(--paragraph-color);
+    overflow-x: hidden;
+}
+footer p {
+    display: block;
+    padding: 1em;
+    background-color: var(--background-hover-color);
+    margin: 0;
+}
+h1, nav a, article, article img {
+    border-radius: 3px;
+}
+h1 {
+    text-align: center;
+    padding: 0.75em 1em 0.75em 1em;
+    background-color: var(--background-color);
+    color: var(--paragraph-color);
+    font-weight: normal;
+    margin: 0;
+}
+h2 {
+    font-weight: normal;
+    color: var(--paragraph-color);
+    padding: 0;
+    margin: 0.5em 0 0 0;
+}
+main hr {
+    width: 50vw;
+    margin: 2em;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+    height: min-content;
+    margin-bottom: 1em;
+}
+header img {
+    height: 3em;
+    margin-left: 1em;
+}
+nav li {
+        list-style: none;
+    }
+nav ul {
+    padding: 1em;
+    height: max-content;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+nav a {
+    color: var(--paragraph-color);
+    background-color: var(--background-color);
+    text-decoration: none;
+    padding: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--background-color);
+    transition: 0.3s;
+}
+nav a:hover {
+    color: var(--paragraph-hover-color);
+    background-color: var(--background-hover-color);
+    border-color: var(--paragraph-hover-color);
+}
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+article {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    background-color: var(--background-color);
+    color: var(--paragraph-color);
+}
+article hr {
+    width: inherit;
+    margin: inherit;
+}
+article a {
+    color: var(--paragraph-color);
+    transition-duration: 0.3s;
+}
+article a:hover {
+    color: var(--paragraph-hover-color);
+}
+
+.game-link {
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    float: right;
+}
+
+.character-frame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 450px;
+}
+.character-frame img, .outcomes-container img {
+    filter:brightness(75%);
+    transition-duration: 0.3s;
+}
+.character-frame img:hover, .outcomes-container img:hover {
+    filter:brightness(100%);
+}
+.character-main img {
+    height: 450px;
+    object-fit: contain;
+}
+.character-iterations {
+    display: flex;
+    flex-direction: column;
+}
+.character-iterations img {
+    height: 200px;
+    object-fit: contain;
+    transform: scaleX(-1);
+}
+.character-list-separator {
+    margin-bottom: 0;
+}
+
+.outcomes-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+}
+@media screen and (min-width: 960px) {
+    header {
+        justify-content: flex-start;
+    }
+    nav ul {
+        flex-direction: row;
+        align-items: baseline;
+    }
+    nav a {
+        padding: 1em;
+    }
+    article {
+        width: 45vw;
+    }
+    .background-image img {
+        width: 100%;
+    }
+}
